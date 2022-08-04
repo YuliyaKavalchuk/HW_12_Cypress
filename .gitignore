@@ -1,0 +1,9 @@
+node_modules
+.idea
+.prettierrc
+tsconfig.json
+.DS_Store
+cypress/integration/my_folder
+cypress/integration/1-getting-started
+cypress/integration/2-advanced-examples
+
