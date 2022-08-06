@@ -9,11 +9,10 @@
 
 declare namespace Cypress {
     interface Chainable {
-        // searchInGoogle(searchedText: string, expectedText: string): void;
         urlDrive2(expectedText: string): void;
         searchAttr(searchedText: string, expectedText: string): void;
         searchResult(searchedText: string, expectedText: string): void;
-        signIn;
+        signIn(): void;
         LoggedIn(email: any, password: any, expectedText: string): void;
     }
 }
