@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Aug 06 13:07:09 MSK 2022","Sat Aug 06 13:07:12 MSK 2022","3353","","My first test","","","","2: Check the search is field with the value",""
-"passed","Sat Aug 06 13:07:12 MSK 2022","Sat Aug 06 13:07:14 MSK 2022","1964","","My first test","","","","3: Check the search results",""
-"passed","Sat Aug 06 13:07:17 MSK 2022","Sat Aug 06 13:07:21 MSK 2022","3578","","My first test","","","","5: Check LogIn",""
-"passed","Sat Aug 06 13:07:14 MSK 2022","Sat Aug 06 13:07:17 MSK 2022","3166","","My first test","","","","4: Check SigIn",""
-"passed","Sat Aug 06 13:07:06 MSK 2022","Sat Aug 06 13:07:09 MSK 2022","2859","","My first test","","","","1: Check the URL",""
