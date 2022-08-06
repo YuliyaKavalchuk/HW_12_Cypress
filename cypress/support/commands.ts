@@ -1,3 +1,4 @@
+import selectors from "../../selectors/selectors";
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -38,7 +39,7 @@ Cypress.Commands.add("urlDrive2", (expectedText: string): void => {
 });
 
 Cypress.Commands.add("searchAttr", (searchedText: string, expectedText: string): void => {
-    cy.get('[class="x-search__input"]').type(searchedText);
+    cy.get(selectors.searchInput).type(searchedText);
     cy.get('[type="submit"]').click();
     cy.get('[value="Ford"]').should("have.attr", expectedText);
 });
