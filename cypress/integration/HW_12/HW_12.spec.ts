@@ -1,21 +1,23 @@
+import {email, password, searchText, url} from "../../fixtures/constMainPage";
+import {urlPart, expectedLoggedInResult} from "../../fixtures/expectedResult";
+
 describe("My first test", () => {
     beforeEach("Open the website", () => {
-        // logger.debug("Open the website")
-        cy.visit("https://www.drive2.ru/");
+        cy.visit(url);
     });
     it("1: Check the URL", function () {
-        cy.urlDrive2("drive2");
+        cy.urlDrive2(urlPart);
     });
-    it.only("2: Check the search is field with the value", function () {
-        cy.searchAttr("Ford", "value");
+    it("2: Check the search is field with the value", function () {
+        cy.searchAttr(searchText, "value");
     });
     it("3: Check the search results", function () {
-        cy.searchResult("Ford", "Ford");
+        cy.searchResult(searchText, searchText);
     });
     it("4: Check SigIn", function () {
         cy.signIn();
     });
     it("5: Check LogIn", function () {
-        cy.LoggedIn("+375259389663", "mAzHIGeK", "Лента");
+        cy.LoggedIn(email, password, expectedLoggedInResult);
     });
 });
