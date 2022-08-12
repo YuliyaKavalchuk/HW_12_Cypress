@@ -17,7 +17,7 @@ describe("My first test", () => {
     it("4: Check SigIn", function () {
         cy.signIn();
     });
-    it("5: Check LogIn", function () {
-        cy.LoggedIn(email, password, expectedLoggedInResult);
-    });
+    // it("5: Check LogIn", function () {
+    //     cy.LoggedIn(email, password, expectedLoggedInResult);
+    // });
 });
